@@ -1,11 +1,12 @@
 # CS 100 Programming Project
 
 A.Group member names and email
-Preston Reed      		preed004@ucr.edu
-Celvin Lizama Pena 		cliza007@ucr.edu
-Bo Yang               		byang059@ucr.edu
+	A.Preston Reed      		preed004@ucr.edu
+	A.Celvin Lizama Pena 		cliza007@ucr.edu
+	A.Bo Yang               		byang059@ucr.edu
 
 B.Title of project
+
 RSHELL
 
 C.What app do you plan to work on? 
