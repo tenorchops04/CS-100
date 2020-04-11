@@ -1,9 +1,9 @@
 # CS 100 Programming Project
 
-1. A.Group member names and email
-	1. Preston Reed      		preed004@ucr.edu
-	1. Celvin Lizama Pena 		cliza007@ucr.edu
-	1. Bo Yang               		byang059@ucr.edu
+* Group member names and email
+	* Preston Reed      		preed004@ucr.edu
+	* Celvin Lizama Pena 		cliza007@ucr.edu
+	* Bo Yang               	byang059@ucr.edu
 
 B.Title of project
 
