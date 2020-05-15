@@ -9,7 +9,7 @@
 * Create a Class
 
 ## C. What app do you plan to work on? 
-* Our project is to program the Create-a-Class menu that is typical in first-person shooter video games. In this menu, the user will be able to choose which of 3 classes to customize. Each class can hold two guns. The player can decide which guns they want to use, as well as which attachments the want to put on those guns. Each gun and attachment cost 1 point, and the player has 5 total points to spend per class.
+* Our project is to program the Create-a-Class menu that is typical in first-person shooter video games. In this menu, the user will be able to choose which of 3 classes to customize. Each class can hold two guns and each gun can have up to 3 attachments. The player can decide which guns they want to use (choices are M4, MP7, R870 MCS, and LSAT), as well as which attachments they want to put on those guns (silencer, scope, grip, and extended magazines). Each gun and attachment cost 1 point, and the player has 5 total points to spend per class.
 ![Example of Create-a-Class menu](https://github.com/cs100/final-project-diversity-squad/blob/master/images/CreateAClass.png?raw=true)
 
 ## D. Why is it important and interesting?
