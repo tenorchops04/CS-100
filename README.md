@@ -23,3 +23,15 @@
 
 ## F. What will be the input/output of your project?
 * The input of this project will be input from the user, selecting options from a menu or series of menus to construct a desired character. The output will be all the characteristics, traits, and kit of the character.
+
+## G. What does each pattern design serve for this final project? 
+* This is an equipment system in a first-person shooter video game. User starts with the CreatAClass object. 
+ 
+* The CreateAClass is a Composite Pattern design. It is used to create an equipment organization for one character.  This CreaterAClass has two leaves and one composite node. Users can use the composite node, Custom class, to create different categories of equipment. Such as custom 1.
+Inside each custom, there are two leaves, Primary and Secondary. Each of these leaves is a slot, and it can contain a decorated guy. 
+ 
+* In order to let users design their own guns, each leaf is constructed as a Factory Pattern. Users can call creator() in a run time to load their own custom-designed-guns.
+ 
+* Obviously, The GunProduct which is called by the creator() is a Decorating Pattern. There are three different guys and four different decorators related.
+
+
