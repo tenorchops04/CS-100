@@ -24,7 +24,9 @@
 ## F. What will be the input/output of your project?
 * The input of this project will be input from the user, selecting options from a menu or series of menus to construct a desired character. The output will be all the characteristics, traits, and kit of the character.
 
-## G. What does each pattern design serve for this final project? 
+## G. What does each pattern design serve for this final project?
+https://github.com/cs100/final-project-diversity-squad/blob/master/images/diagram.jpg 
+
 * This is an equipment system in a first-person shooter video game. User starts with the CreatAClass object. 
  
 * The CreateAClass is a Composite Pattern design. It is used to create an equipment organization for one character.  This CreaterAClass has two leaves and one composite node. Users can use the composite node, Custom class, to create different categories of equipment. Such as custom 1.
