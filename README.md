@@ -27,7 +27,7 @@
 ## G. What does each pattern design serve for this final project?
 ![Diagram of final project](https://github.com/cs100/final-project-diversity-squad/blob/master/images/diagram.jpg?raw=true) 
 
-* This is an equipment system in a first-person shooter video game. User starts with the CreatAClass object. 
+* This is an equipment system in a first-person shooter video game. User starts with the CreateAClass object. 
  
 * The CreateAClass is a Composite Pattern design. It is used to create an equipment organization for one character.  This CreaterAClass has two leaves and one composite node. Users can use the composite node, Custom class, to create different categories of equipment. Such as custom 1.
 Inside each custom, there are two leaves, Primary and Secondary. Each of these leaves is a slot, and it can contain a decorated guy. 
