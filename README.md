@@ -25,7 +25,7 @@
 * The input of this project will be input from the user, selecting options from a menu or series of menus to construct a desired character. The output will be all the characteristics, traits, and kit of the character.
 
 ## G. What does each pattern design serve for this final project?
-(https://github.com/cs100/final-project-diversity-squad/blob/master/images/diagram.jpg?raw=true) 
+![Diagram of final project](https://github.com/cs100/final-project-diversity-squad/blob/master/images/diagram.jpg?raw=true) 
 
 * This is an equipment system in a first-person shooter video game. User starts with the CreatAClass object. 
  
