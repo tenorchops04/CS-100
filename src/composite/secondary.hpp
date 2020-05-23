@@ -2,7 +2,7 @@
 #define __SECONDARY_HPP__
 
 #include "compositeBase.hpp"   
-#include "GunProduct.hpp" 
+//#include "GunProduct.hpp" 
 
 
 class Secondary: public CompositeBase {
@@ -11,13 +11,16 @@ class Secondary: public CompositeBase {
 		Secondary(): CompositeBase() {}
 
 		
-		GunProduct* createGun(GunType ) {
+		/*GunProduct* createGun(GunType ) {
 		// ...
-		}
-
+		}*/
+		
+		virtual void add(CompositeBase* ){}
+		virtual void remove(CompositeBase* ){}
 		std::string print(){
-		//print a Gun's name and its decorator
+			//print a Gun's name and its decorator
+			return "In secondary class print function.\n";
 		}
-}
+};
 
 #endif 

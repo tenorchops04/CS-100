@@ -1,4 +1,5 @@
 #include "../src/composite/primary.hpp"
+#include "../src/composite/secondary.hpp"
 #include "../src/composite/customComposite.hpp"
 #include "../googletest/googletest/include/gtest/gtest.h"
 
@@ -17,5 +18,5 @@ TEST(SecondaryTest, TestPrint){
 
 	custom1->add(secondary);
 
-	EXPECT_EQ(custom1->print(), "In primary class print function.\n");
+	EXPECT_EQ(custom1->print(), "In secondary class print function.\n");
 }
