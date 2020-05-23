@@ -3,7 +3,7 @@
 #define __PRIMARY_HPP__
 
 #include "compositeBase.hpp"   
-#include "GunProduct.hpp" 
+//#include "GunProduct.hpp" 
 
 
 class Primary: public CompositeBase {
@@ -11,14 +11,16 @@ class Primary: public CompositeBase {
 		//Constructor
 		Primary(): CompositeBase() {}
 
-		
-		GunProduct* createGun(GunType ) {
+		/*GunProduct* createGun(GunType ) {
 		// ...
-		}
-
+		}*/
+		
+		virtual void add(CompositeBase* ){}
+		virtual void remove(CompositeBase* ){}
 		std::string print(){
-		//print a Gun's name and its decorator
+			//print a Gun's name and its decorator
+			return "In primary class print function.\n";
 		}
-}
+};
 
-#endif 
+#endif // __PRIMARY_HPP__ 
