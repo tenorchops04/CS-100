@@ -38,3 +38,4 @@ lab
 # CMake Temp Files
 CMakeCache.txt
 CMakeFiles
+Makefile
