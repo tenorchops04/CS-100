@@ -7,10 +7,11 @@ class CustomComposite: public CompositeBase {
         CompositeBase* primary;
         CompositeBase* secondary;
         CompositeBase* loadout;
-	public:
-		//Constructor
-		CustomComposite(CompositeBase* p, CompositeBase* s): CompositeBase() {primary = p; secondary = s; loadout = nullptr;}
-		CustomComposite(CompositeBase* p, CompositeBase* s, CompositeBase* l): CompositeBase() {primary = p; secondary = s; loadout = l; }
+
+	  public:
+		    //Constructor
+		    CustomComposite(CompositeBase* p, CompositeBase* s): CompositeBase() {primary = p; secondary = s; loadout = nullptr;}
+		    CustomComposite(CompositeBase* p, CompositeBase* s, CompositeBase* l): CompositeBase() {primary = p; secondary = s; loadout = l; }
 
 		//virtual void add(CompositeBase*);
         //virtual void remove(CompositeBase*);
@@ -22,7 +23,7 @@ class CustomComposite: public CompositeBase {
             else {
                 return primary->print() + " " + secondary->print(); 
             }
-        }
+    }
 };
-#endif 
+#endif //__CUSTOM_COMPOSITE_HPP__ 
 

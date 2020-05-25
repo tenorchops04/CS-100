@@ -12,7 +12,6 @@ class Secondary: public CompositeBase {
 		//Constructor
 		Secondary(std::string userItem) : CompositeBase() { item = userItem; }
 
-		
 	//	GunProduct* createGun(GunType ) {
 		// ...
 	//	}

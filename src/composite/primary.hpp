@@ -12,7 +12,6 @@ class Primary: public CompositeBase {
 	public:
 		//Constructor
 		Primary(std::string userItem) : CompositeBase() { this->item = userItem; }
-
 		
 	//	GunProduct* createGun(GunType ) {
 	        
@@ -24,4 +23,4 @@ class Primary: public CompositeBase {
 		}
 };
 
-#endif 
+#endif // __PRIMARY_HPP__ 
