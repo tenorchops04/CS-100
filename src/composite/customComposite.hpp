@@ -3,27 +3,20 @@
 #include "compositeBase.hpp"   
 
 class CustomComposite: public CompositeBase {
-    private:
-        CompositeBase* primary;
-        CompositeBase* secondary;
-        CompositeBase* loadout;
+	private:
+        	CompositeBase* primary;
+        	CompositeBase* secondary;
 
-	  public:
-		    //Constructor
-		    CustomComposite(CompositeBase* p, CompositeBase* s): CompositeBase() {primary = p; secondary = s; loadout = nullptr;}
-		    CustomComposite(CompositeBase* p, CompositeBase* s, CompositeBase* l): CompositeBase() {primary = p; secondary = s; loadout = l; }
+	public:
+		//Constructor
+		CustomComposite(CompositeBase* p, CompositeBase* s): CompositeBase() {primary = p; secondary = s;}
 
 		//virtual void add(CompositeBase*);
-        //virtual void remove(CompositeBase*);
+        	//virtual void remove(CompositeBase*);
 		//virtual GunProduct* createGun(GunType);
 		virtual std::string print() {
-            if (loadout != nullptr) {
-                return primary->print() + " " + secondary->print() + " " + loadout->print(); 
-            }
-            else {
-                return primary->print() + " " + secondary->print(); 
-            }
-    }
+    	            return primary->print() + " " + secondary->print(); 
+    		}
 };
 #endif //__CUSTOM_COMPOSITE_HPP__ 
 
