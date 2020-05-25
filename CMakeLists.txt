@@ -15,7 +15,7 @@ ADD_EXECUTABLE(test
 ) 
 
 ADD_EXECUTABLE(lab
-   src/composite/main.cpp
+   src/main.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

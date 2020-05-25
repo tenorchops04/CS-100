@@ -1,6 +1,8 @@
 #ifndef __COMPOSITEBASE_HPP__
 #define __COMPOSITEBASE_HPP__
 
+#include <string>
+
 enum GunType {AK47, MP7, M4} guntype;
 
 class CompositeBase {

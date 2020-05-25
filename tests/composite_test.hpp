@@ -3,20 +3,15 @@
 #include "../src/composite/customComposite.hpp"
 #include "../googletest/googletest/include/gtest/gtest.h"
 
-TEST(PrimaryTest, TestPrint){
-	CustomComposite* custom1 = new CustomComposite();
-	Primary* primary = new Primary();
+TEST(CompositeTest, TestPrint){
+	Primary* primary = new Primary("AK-47");
+	Secondary* secondary = new Secondary("Desert Eagle");
+	Primary* lethal = new Primary("Frag Grenade");
+	Secondary* tactical = new Secondary("Flashbang");
+	CustomComposite* custom1 = new CustomComposite(primary, secondary);
+	CustomComposite* custom2 = new CustomComposite(lethal, tactical);
+	CustomComposite* custom3 = new CustomComposite(custom1, custom2);
 
-	custom1->add(primary);
-
-	EXPECT_EQ(custom1->print(), "In primary class print function.\n");
+	EXPECT_EQ(custom3->print(), "AK-47 Desert Eagle Frag Grenade Flashbang");
 }
 
-TEST(SecondaryTest, TestPrint){
-	CustomComposite* custom1 = new CustomComposite();
-	Secondary* secondary = new Secondary();
-
-	custom1->add(secondary);
-
-	EXPECT_EQ(custom1->print(), "In secondary class print function.\n");
-}
