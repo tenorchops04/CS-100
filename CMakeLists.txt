@@ -11,8 +11,8 @@ SET(CMAKE_CXX_STANDARD 11)
 #) 
 
 ADD_EXECUTABLE(test
-	tests/unit_test.cpp
-)
+    tests/unit_test.cpp
+) 
 
 ADD_EXECUTABLE(lab
    src/composite/main.cpp

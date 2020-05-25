@@ -3,24 +3,27 @@
 #include "compositeBase.hpp"   
 
 class CustomComposite: public CompositeBase {
-	private:
-        	CompositeBase* primaryWeapon;
-        	CompositeBase* secondaryWeapon;
-	public:
-		//Constructor
-		CustomComposite(): CompositeBase() {}
+    private:
+        CompositeBase* primary;
+        CompositeBase* secondary;
+        CompositeBase* loadout;
 
-		virtual void add(CompositeBase* primary){
-			// Placeholder. Need to figure out how to set primaryWeapon and secondaryWeapon.
-			primaryWeapon = primary;
-		}
-        	virtual void remove(CompositeBase*){
-			std::cout << "In custom class, remove() function.\n";
-		}
+	  public:
+		    //Constructor
+		    CustomComposite(CompositeBase* p, CompositeBase* s): CompositeBase() {primary = p; secondary = s; loadout = nullptr;}
+		    CustomComposite(CompositeBase* p, CompositeBase* s, CompositeBase* l): CompositeBase() {primary = p; secondary = s; loadout = l; }
+
+		//virtual void add(CompositeBase*);
+        //virtual void remove(CompositeBase*);
 		//virtual GunProduct* createGun(GunType);
 		virtual std::string print() {
-            		return primaryWeapon->print(); 
-        	}
+            if (loadout != nullptr) {
+                return primary->print() + " " + secondary->print() + " " + loadout->print(); 
+            }
+            else {
+                return primary->print() + " " + secondary->print(); 
+            }
+    }
 };
 #endif //__CUSTOM_COMPOSITE_HPP__ 
 

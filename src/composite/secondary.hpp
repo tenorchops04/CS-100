@@ -6,20 +6,19 @@
 
 
 class Secondary: public CompositeBase {
+    private:
+        std::string item;
 	public:
 		//Constructor
-		Secondary(): CompositeBase() {}
+		Secondary(std::string userItem) : CompositeBase() { item = userItem; }
 
-		
-		/*GunProduct* createGun(GunType ) {
+	//	GunProduct* createGun(GunType ) {
 		// ...
-		}*/
-		
-		virtual void add(CompositeBase* ){}
-		virtual void remove(CompositeBase* ){}
+	//	}
+
 		std::string print(){
-			//print a Gun's name and its decorator
-			return "In secondary class print function.\n";
+		//print a Gun's name and its decorator
+            return item;
 		}
 };
 

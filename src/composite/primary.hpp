@@ -7,19 +7,19 @@
 
 
 class Primary: public CompositeBase {
+    private:
+        std::string item;
 	public:
 		//Constructor
-		Primary(): CompositeBase() {}
-
-		/*GunProduct* createGun(GunType ) {
-		// ...
-		}*/
+		Primary(std::string userItem) : CompositeBase() { this->item = userItem; }
 		
-		virtual void add(CompositeBase* ){}
-		virtual void remove(CompositeBase* ){}
+	//	GunProduct* createGun(GunType ) {
+	        
+	//	}
+
 		std::string print(){
-			//print a Gun's name and its decorator
-			return "In primary class print function.\n";
+		//print a Gun's name and its decorator
+            return item; 
 		}
 };
 
