@@ -21,7 +21,7 @@ public:
 	extendedMags( gunProduct* firearm ): decorator( firearm ){}
 
 	double getCost(){ return gun->getCost()+10; }
-	std::string  print(){ return  gun->print()+" with Extended Mags "; }
+	std::string  print(){ return  gun->print()+" with Extended Mags"; }
 
 };
 
