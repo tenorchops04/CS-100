@@ -14,7 +14,7 @@ ADD_EXECUTABLE(test
     tests/unit_test.cpp
 ) 
 
-ADD_EXECUTABLE(lab
+ADD_EXECUTABLE(create
    src/main.cpp
 )
 
