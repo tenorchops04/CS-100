@@ -39,5 +39,5 @@ and M4ConcreteComponent.
  ### Decorator Pattern
 * The Decorator Pattern is used to decorate any gun the player wants to customize. Each of the gun concrete components have the follwing function: 
 > getCost(): computes the cost of the gun and the attachments it is decorated with
-Each concrete decorator (Silencer, Scope, ExtendedMags, and Grip) has a point cost associate with it, so adding or removing an attachment changes the cost of the gun, which has its own point cost. In order to avoid changing the code within each gun class whenever the player adds an attachment, the factory pattern allows the concrete decorators to do this.
+Each concrete decorator (Silencer, Scope, ExtendedMags, and Grip) has a point cost associate with it, so adding an attachment changes the cost of the gun, which has its own point cost. In order to avoid changing the code within each gun class whenever the player adds an attachment, the factory pattern allows the concrete decorators to do this.
 
