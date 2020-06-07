@@ -13,10 +13,22 @@ class Primary: public CompositeBase {
 	public:
 		//Constructor
 		Primary() : CompositeBase() { }
+
+		Primary(gunType g) : CompositeBase() { 
+	        gunFactory* newFactory = new gunFactory(); 
+	        gunProduct* newGun = newFactory->createGun(g); 
+            this->item = newGun;
+        }
 		
+		gunProduct* createGun(gunType g) {
+	        gunFactory* newFactory = new gunFactory(); 
+	        gunProduct* newGun = newFactory->createGun(g); 
+            this->item = newGun;
+		}
+
 		gunProduct* createGun(std::vector<gunType> &g) {
 	        gunFactory* newFactory = new gunFactory(); 
-	        gunProduct* newGun = newFactory->createGun(g,2); 
+	        gunProduct* newGun = newFactory->createGun(g); 
             this->item = newGun;
 		}
 
