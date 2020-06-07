@@ -15,7 +15,7 @@
 #include "../src/decorator/scope.hpp"
 
 /* enum gunType{ ak_47, mp_7, m_4, ExtendedMags, Grip, Silencer, Scope }; */
-
+/*
 TEST( gunFactory_unitTest, ak47_with_Silencer){
 
     gunType requirement[2]={ ak_47, Silencer };
@@ -69,5 +69,5 @@ TEST( gunFactory_unitTest, accidently_requiring_2_guns){
 
     EXPECT_EQ( player1->print(), "M4 with Silencer with Extended Mags");
 }
-
+*/
 #endif 

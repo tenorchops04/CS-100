@@ -13,19 +13,14 @@
 #include "../decorator/silencer.hpp"
 #include "../decorator/scope.hpp"
 
-
-// 1. name of gun is "type_number"
-// 2. name of gun's decorator is CamelStyle. 
-enum gunType{ ak_47, mp_7, m_4, ExtendedMags, Grip, Silencer, Scope };
-
-
+#include "../composite/compositeBase.hpp"
 
 /*Factory Class*/
 class gunFactory
 {
 public:
  
- gunProduct* createGun( gunType requirement[], int size )
+ gunProduct* createGun( std::vector<gunType> &requirement, int size )
  {
      gunProduct* gunTemp;
      

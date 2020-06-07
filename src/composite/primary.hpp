@@ -3,23 +3,26 @@
 #define __PRIMARY_HPP__
 
 #include "compositeBase.hpp"   
-//#include "GunProduct.hpp" 
+#include "../decorator/gunProduct.hpp" 
+#include "../factory/gunFactory.hpp" 
 
 
 class Primary: public CompositeBase {
     private:
-        std::string item;
+        gunProduct* item;
 	public:
 		//Constructor
-		Primary(std::string userItem) : CompositeBase() { this->item = userItem; }
+		Primary() : CompositeBase() { }
 		
-	//	GunProduct* createGun(GunType ) {
-	        
-	//	}
+		gunProduct* createGun(std::vector<gunType> &g) {
+	        gunFactory* newFactory = new gunFactory(); 
+	        gunProduct* newGun = newFactory->createGun(g,2); 
+            this->item = newGun;
+		}
 
 		std::string print(){
 		//print a Gun's name and its decorator
-            return item; 
+            return this->item->print(); 
 		}
 };
 
