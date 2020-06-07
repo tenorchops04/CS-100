@@ -44,8 +44,11 @@ Each concrete decorator (Silencer, Scope, ExtendedMags, and Grip) has a point co
 ### How To Use the Code
 When running the executable named "create", the user will be shown a menu titled "CREATE-A-CLASS MENU". There are three choices the user can make:
 > p - Choose Primary Weapon: this creates a composite of type Primary which can hold any type of gun
+
 > s - Secondary Weapon: this creates a composite of type Secondary which can hold any type of gun
+
 > q - Quit: allows the user to quit out of the menu
 
 Upon choosing either Primary or Secondary, the user will be allowed to choose a gun. Any of these options call the gunFactory to create the gun chosen.
+
 Finally, the user is prompted to choose an attachment to add to their gun. Each of these attachments is a decorator which decorates the chosen gun.
