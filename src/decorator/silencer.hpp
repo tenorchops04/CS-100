@@ -19,7 +19,7 @@ class silencer: public decorator
 public:	
 	silencer( gunProduct* firearm ): decorator( firearm ){}
 
-	double getCost(){ return gun->getCost()+30; }
+	double getCost(){ return gun->getCost() + 30; }
 	std::string  print(){ return gun->print()+" with Silencer"; }
 
 };

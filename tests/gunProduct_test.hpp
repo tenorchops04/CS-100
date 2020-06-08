@@ -16,8 +16,8 @@
 TEST( gunProduct_unitTest, singleGun){
         gunProduct* gun1=new AK_47();
 
-
         EXPECT_EQ( gun1->print(), "AK_47");
+	EXPECT_EQ(gun1->getCost(), 100.25);
 }
 
 
@@ -27,6 +27,7 @@ TEST( gunProduct_unitTest, aGunWithOneDecorator){
 
 
         EXPECT_EQ( decorator1->print(), "MP_7 with Grip");
+	EXPECT_EQ(decorator1->getCost(), 220.25);
 }
 
 TEST( gunProduct_unitTest, aGunWithAnotherDecorator){
@@ -35,6 +36,7 @@ TEST( gunProduct_unitTest, aGunWithAnotherDecorator){
 
 
         EXPECT_EQ( decorator1->print(), "M4 with Extended Mags");
+	EXPECT_EQ(decorator1->getCost(), 310.25);
 }
 
 TEST( gunProduct_intergration, aGunWithTwoDecorators){
@@ -44,7 +46,9 @@ TEST( gunProduct_intergration, aGunWithTwoDecorators){
 
 
 	EXPECT_EQ( decorator2->print(), "AK_47 with Silencer with Scope");
+	EXPECT_EQ(decorator2->getCost(), 170.25);
 }
+
 
 
 

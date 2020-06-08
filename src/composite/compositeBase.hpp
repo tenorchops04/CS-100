@@ -3,8 +3,6 @@
 
 #include <string>
 
-// 1. name of gun is "type_number"
-// 2. name of gun's decorator is CamelStyle. 
 enum gunType{ ak_47, mp_7, m_4, glock, desert_eagle, ExtendedMags, Grip, Silencer, Scope };
 
 class CompositeBase {
@@ -13,6 +11,7 @@ class CompositeBase {
 		CompositeBase(){}
 
 		virtual std::string print() = 0;
+		virtual double getTotalCost() = 0;
 };
 
 #endif //__COMPOSITEBASE_HPP__

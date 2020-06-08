@@ -15,8 +15,12 @@ class CustomComposite: public CompositeBase {
         	//virtual void remove(CompositeBase*);
 		//virtual GunProduct* createGun(GunType);
 		virtual std::string print() {
-    	            return primary->print() + " " + secondary->print(); 
+    	            return primary->print() + " and " + secondary->print(); 
     		}
+		
+		virtual double getTotalCost(){
+			return primary->getTotalCost() + secondary->getTotalCost();
+		}
 };
 #endif //__CUSTOM_COMPOSITE_HPP__ 
 
