@@ -35,6 +35,10 @@ class Secondary: public CompositeBase {
 		//print a Gun's name and its decorator
             return item->print();
 		}
+		
+		double getTotalCost(){
+			return this->item->getCost();
+		}
 };
 
 #endif 
