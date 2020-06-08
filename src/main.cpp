@@ -49,6 +49,7 @@ int main() {
         
             CustomComposite* customClass= new CustomComposite(newPrimary,newSecondary);
             std::cout << customClass->print() << std::endl;
+            std::cout << "Cost: " << customClass->getTotalCost() << std::endl;
         }   
         else {
             std::cout << "You need to create both primary and secondary weapons" << std::endl; 
