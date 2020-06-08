@@ -39,21 +39,27 @@ int main() {
                 return 0;
             }
         }
+       
+        if (!userPrimary.empty() && !userSecondary.empty()) {
+            Primary* newPrimary= new Primary();
+            newPrimary->createGun(userPrimary);
 
-        Primary* newPrimary= new Primary();
-        newPrimary->createGun(userPrimary);
-
-        Secondary* newSecondary= new Secondary();
-        newSecondary->createGun(userSecondary);
+            Secondary* newSecondary= new Secondary();
+            newSecondary->createGun(userSecondary);
         
-        CustomComposite* customClass= new CustomComposite(newPrimary,newSecondary);
-
-        std::cout << customClass->print() << std::endl;
-        
+            CustomComposite* customClass= new CustomComposite(newPrimary,newSecondary);
+            std::cout << customClass->print() << std::endl;
+        }   
+        else {
+            std::cout << "You need to create both primary and secondary weapons" << std::endl; 
+        }
 }
 
 void choosePrimaryWeapon(std::vector<gunType> &userPrimary) {
         
+        if (userPrimary.size() != 0) {
+            userPrimary.clear();
+        }
         std::string choice;
 
         std::cout << "CHOOSE A PRIMARY WEAPON" << std::endl;
@@ -133,6 +139,10 @@ void choosePrimaryWeapon(std::vector<gunType> &userPrimary) {
 }
 
 void chooseSecondaryWeapon(std::vector<gunType> &userSecondary) {       
+        
+        if (userSecondary.size() != 0) {
+            userSecondary.clear();
+        }
  
         std::string choice;
 
