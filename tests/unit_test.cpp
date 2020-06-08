@@ -3,6 +3,7 @@
 #include "composite_test.hpp"
 #include "gunProduct_test.hpp"
 #include "gunFactory_test.hpp"
+#include "allPatterns_test.hpp"
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);

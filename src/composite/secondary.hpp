@@ -14,26 +14,30 @@ class Secondary: public CompositeBase {
 
 		//Constructor
 		Secondary(gunType g) : CompositeBase() { 
-	        gunFactory* newFactory = new gunFactory(); 
-	        gunProduct* newGun = newFactory->createGun(g); 
-            this->item = newGun;
-        }
+	        	gunFactory* newFactory = new gunFactory(); 
+	        	gunProduct* newGun = newFactory->createGun(g); 
+         	   	this->item = newGun;
+        	}
+
+		Secondary(gunProduct* g) : CompositeBase(){
+			this->item = g;
+		}
 
 		gunProduct* createGun(gunType g) {
-	        gunFactory* newFactory = new gunFactory(); 
-	        gunProduct* newGun = newFactory->createGun(g); 
-            this->item = newGun;
+		        gunFactory* newFactory = new gunFactory(); 
+		        gunProduct* newGun = newFactory->createGun(g); 
+           		 this->item = newGun;
 		}
 
 		gunProduct* createGun(std::vector<gunType> &g) {
-	        gunFactory* newFactory = new gunFactory(); 
-	        gunProduct* newGun = newFactory->createGun(g); 
-            item = newGun;
+	        	gunFactory* newFactory = new gunFactory(); 
+	        	gunProduct* newGun = newFactory->createGun(g); 
+            		item = newGun;
 		}
 
 		std::string print(){
-		//print a Gun's name and its decorator
-            return item->print();
+			//print a Gun's name and its decorator
+            		return item->print();
 		}
 		
 		double getTotalCost(){

@@ -21,6 +21,10 @@ class Primary: public CompositeBase {
             		this->item = newGun;
        		 }
 		
+		Primary(gunProduct* g) : CompositeBase(){
+			this->item = g;
+		}
+	
 		gunProduct* createGun(gunType g) {
 	        	gunFactory* newFactory = new gunFactory(); 
 	       		gunProduct* newGun = newFactory->createGun(g); 
