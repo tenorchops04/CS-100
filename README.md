@@ -41,6 +41,9 @@ and M4ConcreteComponent.
 > getCost(): computes the cost of the gun and the attachments it is decorated with
 Each concrete decorator (Silencer, Scope, ExtendedMags, and Grip) has a point cost associate with it, so adding an attachment changes the cost of the gun, which has its own point cost. In order to avoid changing the code within each gun class whenever the player adds an attachment, the factory pattern allows the concrete decorators to do this.
 
+### Sample Screenshot of Code
+![Screenshot of Code](https://github.com/cs100/final-project-diversity-squad/blob/master/images/SampleInputOutput.png)
+
 ### How To Use the Code
 When running the executable named "create", the user will be shown a menu titled "CREATE-A-CLASS MENU". There are three choices the user can make:
 > p - Choose Primary Weapon: this creates a composite of type Primary which can hold any type of gun
