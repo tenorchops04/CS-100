@@ -30,10 +30,10 @@
 * This is an equipment system in a first-person shooter video game. User starts with the CreateAClass object. 
 
 ### Composite Pattern
-* The CreateAClass is a Composite Pattern design. The job of the composite pattern is to create the Create-a-Class menu that the player can use in order to customize their characters. In the menu, the player will have the option to create up to 3 distinct characters (Custom 1, Custom 2, Custom 3). Each of these characters is a composite. Each composite has 2 leafs, named Primary and Secondary. Each leaf has a function add() and remove(), which allows the player to add or remove a gun into that slot. 
+* The CreateAClass is a Composite Pattern design. The job of the composite pattern is to create the Create-a-Class menu that the player can use in order to customize their characters. In the menu, the player will have the option to customize a class. Each class is a composite. Each composite has 2 leafs, named Primary and Secondary. Each leaf has a function print() and getTotalCost(), which allows the player print the gun and get the total cost of the class. 
 
 ### Factory Pattern
-* The Factory Pattern takes care of creating the guns that the player wishes to add to the Primary and Secondary leafs in the Composite Pattern. The Factory has a Create() function, which takes a gun type as a parameter. The ConcreteGunFactory then takes care of instantiating the correct Gun Class. The gun classes are AK_47, MP_7,
+* The Factory Pattern takes care of creating the guns that the player wishes to add to the Primary and Secondary leafs in the Composite Pattern. The Factory has a createGun() function, which takes a gun type as a parameter and returns a GunProduct. The GunFactory then takes care of instantiating the correct Gun Class. The gun classes are AK_47, MP_7,
 and M4.
  
  ### Decorator Pattern
