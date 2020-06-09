@@ -45,13 +45,37 @@ Each concrete decorator (Silencer, Scope, ExtendedMags, and Grip) has a point co
 ![Screenshot of Code](https://github.com/cs100/final-project-diversity-squad/blob/master/images/SampleInputOutput.png)
 
 ### How To Use the Code
-When running the executable named "create", the user will be shown a menu titled "CREATE-A-CLASS MENU". There are three choices the user can make:
+When running the executable named "create", the user will be shown a menu titled "CREATE-A-CLASS MENU". There are three choices the user can make first:
 > p - Choose Primary Weapon: this creates a composite of type Primary which can hold any type of gun
 
 > s - Secondary Weapon: this creates a composite of type Secondary which can hold any type of gun
+
+> d - Done: When the user is done creating a primary and secondary weapon, this option will print out their guns and attachments as well as the total cost of their choices.
 
 > q - Quit: allows the user to quit out of the menu
 
 Upon choosing either Primary or Secondary, the user will be allowed to choose a gun. Any of these options call the gunFactory to create the gun chosen.
 
-Finally, the user is prompted to choose an attachment to add to their gun. Each of these attachments is a decorator which decorates the chosen gun.
+The user is then allowed to choose a gun for his character.
+> 1 - AK-47: This creates an AK-47 from the gun factory (cost: 100.25).
+
+> 2 - MP7: This creates an MP7 from the gun factory (cost: 200.25).
+
+> 2 - M4: This creates an M4 from the gun factory (cost: 300.25).
+
+> 3 - Quit: allows the user to quit out of the menu 
+
+Finally, the user is prompted to choose an attachment to add to their gun. Each of these attachments is a decorator which decorates the chosen gun:
+
+> 1 - Scope: This decorates the gun with a scope (cost: 40).
+
+> 2 - Extended Mags: This decorates the gun with a extended mags (cost: 10).
+
+> 3 - Grip: This decorates the gun with a grip (cost: 20).
+
+> 4 - Silencer: This decorates the gun with a silencer (cost: 30).
+
+> 3 - Quit: allows the user to quit out of the menu
+
+The user will be allowed two attachments for their primary weapon and one attachment for their secondary weapon. The user must choose and decorate both a primary and secondary weapon before they can print out their items and total cost.
+
